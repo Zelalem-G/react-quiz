@@ -257,3 +257,27 @@ progress {
   font-size: inherit;
   padding: 0.8rem;
 }
+
+.topic-input {
+  padding: 0.6rem 1rem;
+  font-size: 1rem;
+  font-family: inherit; /* Ensures it uses your app's font */
+  border-radius: 8px;
+  border: 2px solid #ccc;
+  outline: none;
+  width: 100%;
+  max-width: 400px;
+  background-color: var(--input-bg, #fff);
+  color: var(--input-text, #000); /* 👈 ensures typed text is visible */
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.topic-input::placeholder {
+  color: #9ca3af; /* Soft gray placeholder */
+  opacity: 1; /* Fully visible */
+}
+
+.topic-input:focus {
+  border-color: #4f46e5; /* Indigo border on focus */
+  box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.2);
+}
