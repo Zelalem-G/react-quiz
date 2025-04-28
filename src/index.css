@@ -36,15 +36,17 @@ body {
 }
 
 .main {
-  width: 50rem;
+  width: 60rem; /* 50 */
 }
 
 .app-header {
   width: 66rem;
-  margin-bottom: 4rem;
+  height: 10vh;
+  margin-bottom: 3rem; /* 4 */
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-evenly;
+  margin-bottom: 1rem;
 }
 
 .error {
@@ -62,20 +64,23 @@ img {
 }
 
 h1 {
-  font-family: "Codystar";
+  font-family: "Fredoka";
   font-size: 5.6rem;
   color: var(--color-theme);
 }
 
 h2 {
   font-size: 3.6rem;
-  margin-bottom: 2rem;
+  text-align: center;
+  margin-top: 0.5rem;
+  margin-bottom: 1.5rem;
 }
 
 h3 {
   font-size: 2.4rem;
+  text-align: center;
   font-weight: 600;
-  margin-bottom: 4rem;
+  margin-bottom: 2rem;
 }
 
 h4 {
@@ -156,6 +161,7 @@ progress {
 .btn-option {
   width: 100%;
   text-align: left;
+  transition: transform 0.3s ease;
 }
 
 .btn-option.correct {
@@ -319,7 +325,7 @@ progress {
   outline: none;
   width: 100%;
   transition: border-color 0.3s, background-color 0.3s;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 
 .input::placeholder {
@@ -336,4 +342,131 @@ progress {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+/* Dark mode overrides */
+.dark-mode {
+  --color-darkest: #121212;
+  --color-dark: #1e1e1e;
+  --color-medium: #aaaaaa;
+  --color-light: #f0f0f0;
+  --color-theme: #00d4ff; /* slight brighter theme */
+  --color-accent: #ff8787; /* slightly brighter accent */
+}
+
+.body.dark-mode {
+  background-color: var(--color-darkest);
+  color: var(--color-light);
+}
+
+.dark-mode .btn {
+  background-color: var(--color-theme);
+  border-color: var(--color-theme);
+}
+
+.dark-mode .btn:not([disabled]):hover {
+  background-color: #0093b0;
+  border-color: #0093b0;
+}
+
+.dark-mode .result {
+  background-color: var(--color-accent);
+  color: #fff;
+}
+
+.dark-mode .input {
+  background-color: #1e1e1e;
+  border-color: var(--color-theme);
+  color: var(--color-light);
+}
+
+.dark-mode .input::placeholder {
+  color: var(--color-medium);
+}
+
+.dark-mode .input:focus {
+  background-color: #2a2a2a;
+}
+
+.dark-mode .timer {
+  border-color: var(--color-theme);
+  color: var(--color-light);
+}
+
+.dark-mode .progress {
+  color: var(--color-medium);
+}
+
+.dark-mode .error {
+  background-color: #ffcc00;
+  color: #222;
+}
+
+/* progress bar inside dark mode */
+.dark-mode ::-webkit-progress-bar {
+  background-color: #333333;
+}
+.dark-mode ::-webkit-progress-value {
+  background-color: var(--color-theme);
+}
+
+.dark-mode .btn-option.correct {
+  background-color: #4dea55;
+  border-color: #4dea55;
+}
+
+.dark-mode .btn-option.wrong {
+  background-color: #fe3434;
+  border-color: #fe3434;
+}
+
+/* darkmode toggle button */
+.btn-darkmode-toggle {
+  position: fixed;
+  top: 2rem;
+  right: 2rem;
+  font-size: 1.6rem;
+  padding: 1rem 2rem;
+  background-color: var(--color-theme);
+  color: white;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  z-index: 1000;
+  transition: background-color 0.3s;
+}
+
+.btn-darkmode-toggle:hover {
+  background-color: #06759e;
+}
+
+html {
+  transition: background-color 0.8s, color 0.8s;
+}
+
+body,
+.app,
+.main,
+.app-header,
+.start,
+.progress,
+.options,
+.result,
+.counter,
+.chooseTopic,
+.input,
+.btn,
+.btn-option,
+.timer,
+.loader-container {
+  transition: background-color 0.5s, color 0.5s, border-color 0.5s;
+}
+
+/* Other components if needed... */
+
+.catagories {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 1rem;
+  margin-bottom: 1rem;
 }
