@@ -57,3 +57,10 @@ Tech Stack
 Just a curious mind with a laptop and a love for building cool stuff.  
 QuizGenie started as a late-night idea and turned into a fun little project mixing AI, design, and interactivity.  
 Hope it makes learning feel a bit more magical ✨
+
+<img width="1886" height="812" alt="Image" src="https://github.com/user-attachments/assets/76127f56-8570-4df8-b60b-447a87608f40" />
+<img width="1095" height="813" alt="Image" src="https://github.com/user-attachments/assets/378fc18a-41f3-482e-8247-80ad9a03e0c4" />
+<img width="1046" height="782" alt="Image" src="https://github.com/user-attachments/assets/f3509553-1efc-4edb-9bc1-83c77a9bc874" />
+<img width="1145" height="534" alt="Image" src="https://github.com/user-attachments/assets/e359134d-df5e-45c0-95b3-e8a49cb3b1dd" />
+<img width="1074" height="792" alt="Image" src="https://github.com/user-attachments/assets/fb930a9c-1405-4898-a0f2-c33885212de9" />
+<img width="1057" height="806" alt="Image" src="https://github.com/user-attachments/assets/86434ba2-c29c-4d0c-b555-9c2028301147" />
